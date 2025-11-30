@@ -1,0 +1,6 @@
+.envrc
+.direnv
+.stack-work
+.env
+.inputs
+dist-newstyle
