@@ -1,12 +1,17 @@
 module Main (main) where
 
-import Lib (solution)
+import Lib
+import Text.Parsec hiding (count)
 
 main :: IO ()
-main = solution 2 part1 part2
+main = solution (Day 2) parser part1 part2
 
-part1 :: String -> Integer
-part1 _input = 10
+parser :: Parser [Int]
+parser = many line
+  where
+    line = integer <* newline
+    integer = read <$> many1 digit
 
-part2 :: String -> Integer
-part2 _input = 20
+part1 _ = 69420
+
+part2 _ = 69420

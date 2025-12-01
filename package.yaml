@@ -8,7 +8,6 @@ copyright:           "2025 Odilf"
 
 extra-source-files:
 - README.md
-- CHANGELOG.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -41,6 +40,9 @@ ghc-options:
 - -threaded
 - -rtsopts
 - -with-rtsopts=-N
+# To be more concise in day solutions
+- -Wno-missing-signatures
+- -Wno-type-defaults
 
 library:
   source-dirs: src

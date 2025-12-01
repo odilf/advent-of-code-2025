@@ -4,6 +4,7 @@
 module Lib
     ( solution
     , Day(Day)
+    , Parser
     ) where
 
 import Control.Monad.IO.Class
@@ -19,7 +20,7 @@ import System.Environment (getEnv)
 import Text.Parsec (Parsec, parse)
 
 year :: Integer
-year = 2024
+year = 2025
 
 newtype Day = Day Integer
 
