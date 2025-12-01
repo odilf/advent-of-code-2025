@@ -60,7 +60,7 @@ getInput day = do
         putStrLn ("Writting input at " ++ file)
         createDirectoryIfMissing True ".inputs"
         writeFile file input
-        return undefined
+        return input
 
 fetchInput :: Day -> IO Text
 fetchInput (Day n) = runReq defaultHttpConfig $ do
