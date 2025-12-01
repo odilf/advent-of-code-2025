@@ -13,7 +13,6 @@ author:         Odilf
 maintainer:     Odilf
 copyright:      2025 Odilf
 license:        BSD-3-Clause
-license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
