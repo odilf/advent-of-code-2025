@@ -61,6 +61,12 @@ executables:
     other-modules: []
     dependencies:
     - advent-of-code-y2025
+  day3:
+    main: Day3.hs
+    source-dirs: solutions
+    other-modules: []
+    dependencies:
+    - advent-of-code-y2025
 
 tests:
   advent-of-code-y2025-test:
