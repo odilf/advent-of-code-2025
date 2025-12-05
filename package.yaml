@@ -26,6 +26,7 @@ dependencies:
 - dotenv
 - directory
 - parsec
+- unordered-containers
 
 ghc-options:
 - -Wall
@@ -63,6 +64,12 @@ executables:
     - advent-of-code-y2025
   day3:
     main: Day3.hs
+    source-dirs: solutions
+    other-modules: []
+    dependencies:
+    - advent-of-code-y2025
+  day4:
+    main: Day4.hs
     source-dirs: solutions
     other-modules: []
     dependencies:
